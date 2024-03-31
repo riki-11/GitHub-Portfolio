@@ -1,7 +1,7 @@
 # UnboundMNL - Problem Area #2
-This project contains the frontend for the UnboundMNL Problem Area #2.
+This project contains the frontend for the [Unbound](https://www.unbound.org/) MNL Problem Area #2.
 It is a Vue 3 application built with Vite.
-The project presents a simple loan management system.
+The project presents a simple loan management system and was submitted in partial fulfillment of the CSSWENG (Software Engineering) course.
 
 ## Recommended IDE Setup
 
