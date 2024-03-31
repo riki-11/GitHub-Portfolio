@@ -1,6 +1,6 @@
 # UnboundMNL - Problem Area #2 (Server)
-This is the server side of the UnboundMNL Problem Area #2.
-The project presents a simple REST API, exposing endpoints for the client to use.
+This project contains the frontend for the [Unbound](https://www.unbound.org/) MNL Problem Area #2.
+The project presents a simple REST API, exposing endpoints for the client to use and was submitted in partial fulfillment of the CSSWENG (Software Engineering) course.
 This is built using NodeJS and ExpressJS.
 
 ## Recommended: Install [Yarn Berry](https://yarnpkg.com/getting-started/install)
