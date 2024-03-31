@@ -1,4 +1,7 @@
 # SereniGuide Web Application
+SereniGuide is an AI-powered sleep companion web application meant that helps rate the quality of your sleep based on factors such as age, hours of sleep, caffeine and alcohol intake, and nicotine use.
+
+This application was built in partial fulfillment of the EMPATHY (Empathic Computing) course.
 
 ## Project setup
 
