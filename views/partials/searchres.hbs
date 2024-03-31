@@ -1,0 +1,32 @@
+<div class="restroom-search">
+    <a href="#" class="search-res">
+        <div class="search-image">
+            
+            <div class="image-container">
+                <img src="{{this.photo}}" alt="Bathroom Image">
+            </div>
+        </div>
+    </a>
+    
+    <div class="search-description">
+        <a href="#" class="search-res">
+            <div class="search-title">
+                <h4><a href="establishment?building={{this.name}}">{{this.name}}</a></h4>
+            </div>
+
+        </a>
+        <div class="rating-rev-container">
+            <div class="rating-search">
+                {{renderRatingSearch this.averageRating}}
+            </div>
+            <a href="#" class="search-res"><p class="review-num">{{this.reviewCount}} reviews</p>   </a>
+        </div>
+
+
+        <div class="review-sample">
+            <p> {{this.description}}</p>
+        </div>
+    </div>
+</div>
+
+<h2 class="search-res-line"></h2>

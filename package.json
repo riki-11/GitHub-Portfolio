@@ -1,0 +1,35 @@
+{
+  "name": "ccapdev-mco",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "tailwindcss build -i ./src/styles.css -o ./public/css/styles.css --watch",
+    "app": "nodemon ./app.js",
+    "dev": "concurrently \"npm run app\" \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "handlebars-helpers": "^0.10.0",
+    "moment": "^2.29.4",
+    "mongodb": "^5.7.0",
+    "mongoose": "^7.3.4",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.0.1",
+    "passport": "^0.6.0",
+    "passport-local-mongoose": "^8.0.0"
+  },
+  "devDependencies": {
+    "chokidar": "^3.5.3",
+    "concurrently": "^8.2.0",
+    "livereload": "^0.9.3",
+    "tailwindcss": "^3.3.3"
+  }
+}

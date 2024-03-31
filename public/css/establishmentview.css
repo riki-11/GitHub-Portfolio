@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+body {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color:#202020;
+  color:white;
+}
+
+/* CLASSES FOR ALL BUILDING IMAGE BACKGROUNDS */
+
+.henry-bg {
+    background-image: url("/images/bldg-henry.jpeg");
+}
+
+.andrew-bg {
+    background-image: url("/images/bldg-andrew.jpg");
+}
+
+.gokongwei-bg {
+    background-image: url("/images/bldg-goks.jpeg");
+}
+
+.miguel-bg {
+    background-image: url("/images/bldg-miguel.jpg");
+}
+
+.velasco-bg {
+    background-image: url("/images/bldg-velasco.jpeg");
+}
+
+.razon-bg {
+    background-image: url("/images/bldg-razon.jpeg");
+}
+
+.st-lasalle-bg {
+    background-image: url("/images/bldg-stlasalle.jpeg")
+}
+
+/* add more building classes as necessary */
+
+.content-container {
+    width: 100%;
+    height: 100%;
+}
+.establishment-container{
+    width: 100%;
+    left: 0px;
+    top: -200px;
+}
+.establishment-name-container{
+    position: absolute;
+    top: 65%;
+    background: rgba(41, 41, 41, 0.5);
+    width: 35%;
+}
+.establishment-name-container{
+    display: flex;
+}
+.establishment-name-container hr{
+    border: 2px solid;
+    color: #F5CB5C ;
+}
+
+.establishment-name-container span{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #FFFFFF; 
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.review-ctr{
+    position:absolute;
+    top: 90%;
+    left:85%;
+    color:#FFFFFF;
+    font-size: 1.5rem;
+    opacity: .6;
+}
+.down-container{
+    position:absolute;
+    bottom: 3%;
+    left:calc(50% - 10px);
+    color:#FFFFFF;
+    transform: matrix(0, -1, -1, 0, 0, 0);
+}
+.down-container a{
+    display: absolute;
+    text-decoration: none;
+    color: inherit;
+    font-size: 3rem;
+    outline: none;
+    opacity: .3;
+    width: 100%;
+}
+.down-container a:hover{
+    opacity: .7;
+    transition: 250ms;
+}
+.establishment-details-container{
+    width: 100%;
+}
+
+/* ESTABLISHMENT DETAILS CONTAINER */
+.establishment-banner {
+    height: 400px; 
+    background-position-y: 40%;
+    background-size:cover;
+}
+
+.establishment-details-container{
+    width: 100%;
+}
+.establishment-details-content-container{
+    place-items: center;
+    display: inline;
+    position: relative;
+    gap: 10%;
+}
+.establishment-details-text-content-container{
+    display: flex;
+}
+.left-details-container{
+    gap: 90px;
+    width: 50%;
+}
+.left-title-details-container{
+    display:flex;
+    gap: 6px;
+    
+}
+
+.left-title-details-container span{
+    gap: 10%;
+
+    font-size: 3rem;
+    font-weight: bolder;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.left-captions-details-container {
+    font-weight: lighter;
+    opacity: .9;
+    padding: 5px;
+}
+.left-gotomap-details-container button{
+    color: #F5CB5C;
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 5px;
+    text-shadow: 1px 2px 5.5px rgba(0, 0, 0, 0.20);
+}
+
+.right-details-container{
+    width: 650px;
+    /* height: 400px; */
+    justify-content: center;
+    display: flex;
+    padding: 3%;
+    gap: 20;
+}
+.right-details .right-details-amenities{
+    font-weight: bolder;
+    font-size: 1.2rem;
+    gap: 10px;
+}
+
+.other-right-details{
+    padding-top:5px;
+    margin-top:10px;
+}
+
+.right-amenities {
+    margin-top:10px
+}
+
+.right-details-container .img1{
+    width: 100px;
+    height: 285px;
+    padding: 10%;
+    border-radius: 5px;
+    background: url(images/cr-henry.png);
+    background-size:cover;
+    opacity: .85;
+}
+
+.right-details-container .img2{
+    width: 100px;
+    height: 285px;
+    padding: 10%;
+    border-radius: 5px;
+    background: url(images/cr-temp3.jpg);
+    background-size: cover;
+    opacity: .85;
+}
+
+.right-details-container .img3{
+    width: 100px;
+    height: 285px;
+    padding: 10%;
+    border-radius: 5px;
+    background: url(images/cr-temp2.jpg);
+    background-size: cover;
+    opacity: .85;
+    
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+}
+.img1:hover,.img2:hover,.img3:hover{
+    opacity: 1;
+}
+
+.establishment-review-container{
+    position:relative;
+    display: flex;
+    top: 45%;
+    left: 10%;
+    width: 80%;
+    height: 600px;
+}
+
+.establishment-review-container [class^="review-container"]{
+    position:absolute;
+    display:inline;
+    word-wrap: break-word;
+    text-align: center;
+    padding: 5%;
+
+    width: 23%;
+    height: 75%;
+    background-color: #ffd86e;
+    opacity: 1;
+    border-radius: 25px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+
+}
+.establishment-review-container [class^="review-container"]:hover{
+    z-index: 1;
+    opacity: 1;
+    background-color: #F5CB5C;
+}
+
+/* .user-rate-icons-container{
+    
+} */
+.establishment-review-container [class^="review-container"] img{
+    border-radius: 20px;
+}
+
+.establishment-review-container .user{
+    font-size: 1.5rem;
+    font-weight:bold;
+}
+.establishment-review-container .user-rate{
+    font-size: 1rem;
+    font-weight:lighter;
+}
+.establishment-review-container .user-review-content{
+    font-size: 1rem;
+    font-weight:light;
+}
+
+.establishment-review-container .reactions-container{
+    position: inherit;
+    
+    width: fit-content;
+    text-align: right;
+
+    top: 92%;
+    left: 85%;
+}
+
+.establishment-review-container .review-container-1{
+    left: 33%;
+}
+.establishment-review-container .review-container-2{
+    top: 5%;
+    left: 1%;
+}
+.establishment-review-container .review-container-3{
+    top: 5%;
+    left: 65.5%;
+}
+
+
+
+/* New CSS */
+
+.search-line {
+    width: 100%; 
+    border-bottom: 1px solid #F5CB5C; 
+    line-height: 0.1em;
+} 
+
+.review-header {
+    font-size:30px;
+}
+
+.header {
+    display:flex;
+}
+
+.dropbtn {
+    background-color: #f5cb5c;
+    color: black;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:6px;
+    padding-bottom:6px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius:5%;
+
+}
+
+.dropdown {
+    position: relative;
+    margin-left:auto;
+}
+
+.dropdown-content {
+    position: absolute;
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right:0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size:13px;
+}
+  
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color:#dbaf3b;
+}
+
+.no-decoration {
+    text-decoration: none;
+  }
+  
+.text-gray {
+    color: #9E9E9E;
+}
+
+.review-search-box {
+    display: flex;
+    align-items: center;
+    flex-grow: 8;
+    border: solid 1px #757575;
+    border-radius: 10px;
+    max-width: 300px;
+    padding: 8px;
+    gap: 10px;
+    height: 30px;
+    margin-left:15px;
+}
+
+#search-box-text {
+    font-size:15px;
+}
+
+
+.filter-font {
+    font-size:25px;
+}
+.filter-line {
+    border-color: #4f4f4f;
+    width: 60%;
+}
+
+.establishment-rating {
+    display:flex;
+    margin-bottom:20px;
+    margin-left:20px;
+}
+
+.left-gotomap-details-container .popup-img .overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.70);
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+    display: none;
+}
+.left-gotomap-details-container .popup-img .content{
+    position: fixed;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    width: 80%;
+    height: 80%;
+    z-index: 2;
+}
+.left-gotomap-details-container .popup-img .closebtn{
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    color:#202020;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+.left-gotomap-details-container .popup-img.active .overlay{
+    display: block;
+}
+.left-gotomap-details-container .popup-img.active .content{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%,-50%) scale(1);
+    
+}
+
+.reply-blocks{
+    padding-left: 5%;
+}
+.reply-form-container{
+    width: 100%;
+    border-radius: 1%;
+    padding: 2% 0 2% 5%;
+    display: none;
+}
+
+.reply-form-container textarea{
+    padding: 1.5%;
+    margin: 1% 1% 1% 0;
+    font-size: .8rem;
+    resize: none;
+}
+.reply-form-container .submit{
+    color:#202020;
+    border: 2px solid black;
+    background-color: #f5cb5c;
+    border-radius: 5%;
+    padding: .5%;
+    right: 5%;
+    font-size: .9rem;
+}
