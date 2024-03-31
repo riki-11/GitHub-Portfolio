@@ -1,7 +1,0 @@
-export * from './api_url'
-export * from './path_names'
-export * from './filenames'
-export * from './loan_types'
-export * from './deposit_categories'
-export * from './payment_frequencies'
-export * from './rules'

@@ -1,15 +1,7 @@
-# UnboundMNL - Problem Area #2
-This project contains the frontend for the UnboundMNL Problem Area #2.
-It is a Vue 3 application built with Vite.
-The project presents a simple loan management system.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+# UnboundMNL - Problem Area #2 (Server)
+This is the server side of the UnboundMNL Problem Area #2.
+The project presents a simple REST API, exposing endpoints for the client to use.
+This is built using NodeJS and ExpressJS.
 
 ## Recommended: Install [Yarn Berry](https://yarnpkg.com/getting-started/install)
 1. Install Node.js 14+
@@ -19,9 +11,22 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Environment Variables
 Duplicate `.env.example` and rename it to `.env`.
-### `VITE_API_URL`
-The API URL to use for the application, defaults to `http://localhost:3000`.
-This is the URL where the backend is running.
+### `PORT`
+The port to use for the application, defaults to `3000`.
+### `MONGODB_URI`
+The MongoDB URI to use for the application, defaults to `mongodb://localhost:27017/unboundmnl-problem-area-2`.
+### `JWT_SECRET`
+The secret to use for JWT. This is required for the application to run.
+If not set, the application will throw an error.
+### `FRONTEND_URLS`
+The comma-separated list of URLs of the frontend application.
+This is used for CORS.
+If no value is set, the application will allow all origins.
+
+## Private Files
+Put any private files in the `private` directory.
+This route is protected by `.gitignore` and will not be committed to the repository.
+Put here the template application form and other private files.
 
 ## Optional Development Stuff
 ### [Prettier](https://prettier.io/) for Code Formatting
@@ -35,31 +40,16 @@ Other editors have their own extensions as well.
 Rules are already set in `.eslintrc.js`.
 
 ## Project Setup
-
 ```sh
 yarn
 ```
 
-### Compile and Hot-Reload for Development
-
+### Start the Server
 ```sh
-yarn dev
+yarn start
 ```
 
-### Compile and Minify for Production
-
+### Automatically Restart the Server on Changes
 ```sh
-yarn build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-yarn test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-yarn lint
+yarn watch
 ```
