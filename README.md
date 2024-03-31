@@ -4,14 +4,18 @@ Welcome to Flush Finder, a review website for the restrooms around De La Salle U
 
 If you are interested in viewing the deployed website, you may visit us at https://flush-finder.onrender.com
 
+This project was submitted in partial fulfillment for the CCAPDEV (Web Application Development) course.
+
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Technologies](#technologies)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contact](#contact)
+- [Flush Finder](#flush-finder)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Features](#features)
+  - [Technologies](#technologies)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contact](#contact)
 
 ## Introduction
 
