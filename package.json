@@ -1,35 +1,51 @@
 {
-  "name": "ccapdev-mco",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "tailwindcss build -i ./src/styles.css -o ./public/css/styles.css --watch",
-    "app": "nodemon ./app.js",
-    "dev": "concurrently \"npm run app\" \"npm run build-css\""
-  },
-  "author": "",
-  "license": "ISC",
+  "name": "unboundmnl-area-2",
+  "version": "0.0.0",
+  "private": true,
   "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build:preview": "vite build && vite preview",
+    "test:unit": "vitest",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "format": "prettier --write src/"
+  },
   "dependencies": {
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "express-handlebars": "^6.0.6",
-    "express-session": "^1.17.3",
-    "handlebars-helpers": "^0.10.0",
-    "moment": "^2.29.4",
-    "mongodb": "^5.7.0",
-    "mongoose": "^7.3.4",
-    "multer": "^1.4.5-lts.1",
-    "nodemon": "^3.0.1",
-    "passport": "^0.6.0",
-    "passport-local-mongoose": "^8.0.0"
+    "@mdi/font": "^7.3.67",
+    "@vitejs/plugin-vue": "^4.5.0",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "@vueuse/core": "^10.6.1",
+    "decimal.js": "^10.4.3",
+    "gridjs": "^6.0.6",
+    "jsdoc-vuejs": "^4.0.0",
+    "jwt-decode": "3.x",
+    "nprogress": "^0.2.0",
+    "pdf-lib": "^1.17.1",
+    "ph-locations": "^1.1.3",
+    "pinia": "^2.1.7",
+    "vite": "^5.0.3",
+    "vite-plugin-vuetify": "^1.0.2",
+    "vue": "^3.3.9",
+    "vue-cookies": "^1.8.3",
+    "vue-router": "^4.2.5",
+    "vuetify": "^3.4.4"
   },
   "devDependencies": {
-    "chokidar": "^3.5.3",
-    "concurrently": "^8.2.0",
-    "livereload": "^0.9.3",
-    "tailwindcss": "^3.3.3"
+    "@rushstack/eslint-patch": "^1.6.0",
+    "@vue/eslint-config-prettier": "^8.0.0",
+    "@vue/test-utils": "^2.4.3",
+    "eslint": "^8.54.0",
+    "eslint-plugin-vue": "^9.18.1",
+    "jsdom": "^23.0.0",
+    "prettier": "^3.1.0",
+    "vitest": "^0.34.6"
+  },
+  "packageManager": "yarn@4.0.2",
+  "dependenciesMeta": {
+    "jsdoc-vuejs@4.0.0": {
+      "unplugged": true
+    }
   }
 }

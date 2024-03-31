@@ -1,0 +1,8 @@
+{
+    "plugins": [
+      ".yarn/unplugged/jsdoc-vuejs-virtual-b8d35093ba/node_modules/jsdoc-vuejs"
+    ],
+    "source": {
+      "includePattern": "\\.(vue|js)$"
+    }
+  }

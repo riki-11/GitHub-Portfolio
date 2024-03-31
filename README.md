@@ -1,87 +1,65 @@
-# Flush Finder
+# UnboundMNL - Problem Area #2
+This project contains the frontend for the UnboundMNL Problem Area #2.
+It is a Vue 3 application built with Vite.
+The project presents a simple loan management system.
 
-Welcome to Flush Finder, a review website for the restrooms around De La Salle University (DLSU)! This repository contains the source code for our web application, and this README will guide you on how to set up and run the project locally, as well as provide additional information about the project. 
+## Recommended IDE Setup
 
-If you are interested in viewing the deployed website, you may visit us at https://flush-finder.onrender.com
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-## Table of Contents
+## Customize configuration
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Technologies](#technologies)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contact](#contact)
+See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Introduction
+## Recommended: Install [Yarn Berry](https://yarnpkg.com/getting-started/install)
+1. Install Node.js 14+
+2. Open a terminal on your user directory.
+3. Run `corepack enable`
+4. Run `yarn set version stable`
 
-Flush Finder provides users with a user-friendly platform to discover and review buildings and restrooms. We created this website after seeing the numerous posts on the DLSU freedom wall that were asking for the best restrooms around the campus for one to do their business. Our goal is to help our users find the cleanest and most comfortable restrooms to suit their needs
+## Environment Variables
+Duplicate `.env.example` and rename it to `.env`.
+### `VITE_API_URL`
+The API URL to use for the application, defaults to `http://localhost:3000`.
+This is the URL where the backend is running.
 
-## Features
+## Optional Development Stuff
+### [Prettier](https://prettier.io/) for Code Formatting
+You can install the [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) extension (for VSCode).
+Other editors have their own extensions as well.
+Rules are already set in `.prettierrc.json`.
 
-- **View Establishments:** Visitors and registered users can view establishments and reviews.
-- **Registered users:** Registered users can post reviews, edit their profile information (including their picture), and be remembered for extended sessions
-- **View User Profile:** Registered users can view profiles of other users
-- **Reviews:** Logged-in users can create reviews with titles, bodies, ratings, restroom amenities, and photos. These reviews can be marked as helpful or unhelpful by other users. Reviews can be edited or deleted.
-- **Search Establishments / Reviews:** Visitors and registered users can search establishments or reviews based on keywords.
-- **Establishment Owner Response:** An additional role, "establishment owner," can respond to reviews. Credentials are already in the database and the establishment owner just needs to log in. 
+### [ESLint](https://eslint.org/) for Code Linting
+You can install the [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) extension (for VSCode).
+Other editors have their own extensions as well.
+Rules are already set in `.eslintrc.js`.
 
-## Technologies
+## Project Setup
 
-The project utilizes the following:
-
-- Frontend: HTML, CSS, JavaScript, Bootstrap, Tailwind
-- Backend: Node.js, Express.js
-- Database: MongoDB, Mongoose
-- Templating Engine: Handlebars
-- User Authentication: Passport.js
-- Image Storage: Multer
-- Deployment: Render
-
-## Installation
-
-To set up the project locally, follow these steps:
-
-1. Clone the repository:
-
-```
-git clone https://github.com/riki-11/CCAPDEV-MCO.git
-```
-2. Install dependencies:
-
-```
-cd <project-folder-path>
-npm install
+```sh
+yarn
 ```
 
-## Usage
+### Compile and Hot-Reload for Development
 
-To run the application, use the following command:
+```sh
+yarn dev
 ```
-npm run dev
+
+### Compile and Minify for Production
+
+```sh
+yarn build
 ```
-The application will be available at http://localhost:3000.
 
-For owner accounts, since there is no way to create a new one, they are already registered in the database. The following are the log-in credentials for all owner accounts:
-- **username:** henrysy, **password:** password
-- **username:** miguelhall, **password:** password
-- **username:** velascohall, **password:** password
-- **username:** andrew_gonzalez, **password:** password
-- **username:** enrique_razon, **password:** password
-- **username:** gokongwei, **password:** password
+### Run Unit Tests with [Vitest](https://vitest.dev/)
 
-## Contact
+```sh
+yarn test:unit
+```
 
-If you have any questions or inquiries, please contact us:
+### Lint with [ESLint](https://eslint.org/)
 
-- Krizchelle Wong (krizchelle_danielle_wong@dlsu.edu.ph)
-- Patrick Leonida (patrick_josh_c_leonida@dlsu.edu.ph)
-- Enrique Lejano (enrique_rafael_a_lejano@dlsu.edu.ph)
-- Mark Abergos (mark_gabriel_abergos@dlsu.edu.ph)
-
-Feel free to explore our project, and we hope you enjoy using it as much as we enjoyed building it!
-
-
-
-
-
+```sh
+yarn lint
+```
